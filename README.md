@@ -6,15 +6,28 @@ The study is funded by the California Energy Commission and is conducted by a re
 
 ## Repository status
 
-This repository is being prepared for the release of CEVICA data processing, quality assurance, quality control, and analysis code. Code and documentation will be added after internal review. No participant level data will be stored in this repository.
+This private repository is being prepared for the release of CEVICA data processing, quality assurance, quality control, event detection, and analysis code. The directory structure is available, but no study code or participant level data have been added.
 
-## Planned scope
+## Repository structure
 
-Planned materials include data cleaning and harmonization workflows, sensor calibration and quality control code, cooking and range hood event methods, pollutant event methods, and reproducible analysis scripts.
+| Directory | Purpose |
+| --- | --- |
+| `01_data_preparation` | Data download, tidying, cleaning, and merging for HA and Sapiens data |
+| `02_no2` | NO2 quality control and event detection |
+| `03_pm25` | PM2.5 quality control and event detection |
+| `04_cooking` | Cooking data quality control and event detection |
+| `05_range_hood` | Range hood data quality control and event detection |
+| `06_analysis` | Statistical analysis, sensitivity analyses, tables, and figures |
+
+`01_data_preparation` is divided into `download`, `tidy_clean`, and `merge`. Each section contains `scripts`, `docs`, and `examples`.
+
+The NO2, PM2.5, cooking, and range hood sections are divided into `qaqc` and `event_detection`. Each section also contains `scripts`, `docs`, and `examples`.
+
+The analysis section contains `scripts`, `docs`, and `examples`. Analysis code should read outputs from the earlier processing sections and should not redefine quality control or event detection rules.
 
 ## Data privacy
 
-Study data are not public and are not included here. Participant data, credentials, and restricted project files must not be added to this repository.
+Study data are not public and are not included here. Participant data, credentials, restricted project files, and participant level outputs must not be added to this repository. Examples must use synthetic data that do not represent real participants.
 
 ## Citation and license
 
