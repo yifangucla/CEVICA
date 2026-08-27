@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Environment files and credentials
+.env
+.env.*
+*.pem
+*.key
+credentials/
+secrets/
+
+# Restricted study data
+data/
+raw_data/
+participant_data/
+restricted_data/
+private_data/
+
+# Local temporary files
+.DS_Store
+Thumbs.db
+~$*
+*.log
